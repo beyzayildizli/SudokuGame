@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(40, 41, 59);
+            background-size: cover;
+            background-position: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>SUDOKU</h1>
+        </div>
+        <ul class="links">
+            <li><a href="https://github.com/beyzayildizli" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/beyzayildizli/" target="_blank">Linkedin</a></li>
+        </ul>
+        <a class="start" href="index.html">Tekrar Oyna</a>
+    </nav>
+
+    <section class="infoEnd">
+        <h1>TEBRİKLER</h1>
+        <p>Toplam Süre: <span id="totalTimePlaceholder"></span></p>
+    </section>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var totalTime = urlParams.get('totalTime');
+
+        var totalTimePlaceholder = document.getElementById('totalTimePlaceholder');
+        totalTimePlaceholder.textContent = totalTime;
+    </script>
+</body>
+
+</html>
