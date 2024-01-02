@@ -15,7 +15,8 @@
     width: 100%;
     height: 520px;
     margin-top: 10px;
-
+overflow-x: auto; /* veya overflow-x: scroll; */
+    white-space: nowrap;
     position: relative;
 }
 
